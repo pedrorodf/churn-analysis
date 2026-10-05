@@ -5,7 +5,7 @@ Projeto de análise exploratória de dados com Python para investigar o cancelam
 ## Conteúdo
 
 - `analysis.ipynb`: notebook com a leitura, preparação e análise dos dados, incluindo gráficos interativos.
-- `cancelamentos.csv`: arquivo de entrada esperado pelo notebook; não é incluído no repositório por conter identificadores e registros em nível de cliente.
+- `cancelamentos.csv`: base fictícia utilizada pelo notebook.
 
 ## Análises realizadas
 
@@ -38,12 +38,12 @@ python -m pip install pandas plotly notebook
    jupyter notebook
    ```
 
-4. Obtenha uma cópia autorizada e adequadamente anonimizada da base, salve-a como `cancelamentos.csv` na mesma pasta do notebook e execute as células.
+4. Execute as células do notebook. O arquivo `cancelamentos.csv` deve permanecer na mesma pasta.
 
 ## Estrutura dos dados
 
-A base esperada contém informações como idade, sexo, tempo como cliente, frequência de uso, ligações ao call center, dias de atraso, tipo de assinatura, duração do contrato, gasto total, tempo desde a última interação e indicador de cancelamento.
+A base contém dados fictícios sobre idade, sexo, tempo como cliente, frequência de uso, ligações ao call center, dias de atraso, tipo de assinatura, duração do contrato, gasto total, tempo desde a última interação e indicador de cancelamento.
 
 ## Privacidade dos dados
 
-O CSV original contém a coluna `CustomerID` e registros em nível de cliente. Por isso, `cancelamentos.csv` e `.venv` são excluídos do versionamento. Não publique a base em outro local sem confirmar que você tem autorização para compartilhá-la e que os dados foram adequadamente anonimizados. O notebook remove o identificador em uma etapa da análise, mas isso não remove os identificadores do arquivo CSV original.
+Os dados desta base são fictícios. O notebook remove a coluna `CustomerID` durante a análise. O ambiente virtual `.venv` é excluído do versionamento.
